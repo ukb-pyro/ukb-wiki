@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The MAGA revolution threatens America’s most innovative place | The Economist</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Georgia&display=swap">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif; /* Replace with Benton Sans if licensed */
+            color: #333;
+            line-height: 1.6;
+            background-color: #f5f5f5;
+        }
+        a {
+            text-decoration: none;
+            color: #006699;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        /* Header */
+        .header {
+            background-color: #fff; /* White background for header */
+            padding: 10px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header .logo-container {
+            background-color: #e3120b; /* Economist red behind logo */
+            padding: 10px 20px;
+            margin-left: 20px; /* White space between logo and left margin */
+            display: inline-block;
+        }
+        .header .logo {
+            font-family: 'Georgia', serif; /* Replace with Economist Old Standard if licensed */
+            font-size: 20px; /* Adjusted for stacking */
+            color: white;
+            font-weight: bold;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            line-height: 1.2;
+            text-align: center;
+        }
+        .header .logo span {
+            display: block;
+        }
+        .header .account-menu {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 14px;
+            color: #333;
+            padding-right: 20px;
+        }
+        .header .account-menu svg {
+            width: 20px;
+            height: 20px;
+        }
+        .header .menu-toggle {
+            display: none;
+            color: #333;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        .nav {
+            background-color: #fff;
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+        }
+        .nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .nav ul li {
+            margin-right: 20px;
+        }
+        .nav ul li a {
+            font-size: 14px;
+            color: #333;
+            font-weight: 500;
+        }
+        .nav ul li a:hover {
+            color: #e3120b;
+        }
+        /* Article */
+        .article-header {
+            max-width: 800px;
+            margin: 40px auto;
+        }
+        .article-header .category {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        .article-header .category span.region {
+            color: #e3120b;
+        }
+        .article-header .category span.tag {
+            color: #000;
+            font-weight: normal;
+        }
+        .article-header h1 {
+            font-family: 'Georgia', serif; /* Replace with Economist Old Standard */
+            font-size: 32px;
+            line-height: 1.2;
+            margin: 0 0 20px;
+        }
+        .article-header .subtitle {
+            font-size: 18px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+        .article-header .image {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        .article-header .image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .article-header .caption {
+            font-size: 12px;
+            color: #666;
+            margin-top: 5px;
+        }
+        .article-header .meta {
+            font-size: 14px;
+            color: #666;
+            margin: 20px 0;
+        }
+        .article-header .actions {
+            display: flex;
+            gap: 10px;
+        }
+        .article-header .actions a {
+            font-size: 14px;
+            color: #006699;
+            padding: 8px 16px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+        .article-header .actions a:hover {
+            background-color: #f0f0f0;
+        }
+        /* Article Content */
+        .article-content {
+            max-width: 800px;
+            margin: 0 auto 40px;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+        .article-content p {
+            margin: 0 0 20px;
+        }
+        .article-content .chart {
+            float: left; /* Wiki-float style */
+            width: 300px; /* Adjust as needed */
+            margin: 0 20px 20px 0;
+            background-color: #fff;
+            padding: 10px;
+            border: 1px solid #ddd;
+        }
+        .article-content .chart img {
+            max-width: 100%;
+            height: auto;
+        }
+        .article-content .chart-caption {
+            font-size: 12px;
+            color: #666;
+            margin-top: 10px;
+            text-align: center;
+        }
+        .article-content .advertisement {
+            font-style: italic;
+            color: #666;
+            text-align: center;
+            margin: 20px 0;
+            clear: both; /* Ensure ad doesn't overlap floated charts */
+        }
+        .article-content .red-square {
+            color: #e3120b;
+            font-weight: bold;
+        }
+        /* Footer */
+        .footer {
+            background-color: #fff;
+            padding: 40px 20px;
+            border-top: 1px solid #ddd;
+            font-size: 12px;
+            color: #666;
+            clear: both;
+        }
+        .footer a {
+            color: #006699;
+        }
+        .footer .links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        .footer .links div {
+            flex: 1;
+            min-width: 200px;
+        }
+        /* Cookies Banner */
+        .cookies-banner {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            font-size: 12px;
+            z-index: 1000;
+        }
+        .cookies-banner a {
+            color: #e3120b;
+        }
+        .cookies-banner button {
+            background-color: #e3120b;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            margin-left: 10px;
+            cursor: pointer;
+        }
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .header .menu-toggle {
+                display: block;
+            }
+            .nav {
+                display: none;
+            }
+            .nav.active {
+                display: block;
+            }
+            .nav ul {
+                flex-direction: column;
+            }
+            .nav ul li {
+                margin: 10px 0;
+            }
+            .article-header h1 {
+                font-size: 24px;
+            }
+            .article-header .subtitle {
+                font-size: 16px;
+            }
+            .article-content {
+                font-size: 14px;
+            }
+            .header .account-menu {
+                font-size: 12px;
+            }
+            .header .account-menu svg {
+                width: 16px;
+                height: 16px;
+            }
+            .article-content .chart {
+                float: none; /* Disable float on mobile for better readability */
+                width: 100%;
+                margin: 20px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Cookies Banner -->
+    <div class="cookies-banner">
+        To enhance your experience and ensure our website runs smoothly, we use cookies and similar technologies.
+        <a href="#">Manage cookies</a>
+        <button onclick="this.parentElement.style.display='none'">Accept</button>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="logo-container">
+            <div class="logo">
+                <span>The</span>
+                <span>Economist</span>
+            </div>
+        </div>
+        <div class="account-menu">
+            <svg viewBox="0 0 24 24" fill="#333">
+                <circle cx="12" cy="6" r="4" />
+                <path d="M12 10c-4 0-8 2-8 6v2h16v-2c0-4-4-6-8-6z" />
+            </svg>
+            <a href="#">Account</a> | <a href="#">Menu</a>
+        </div>
+        <div class="menu-toggle" onclick="document.querySelector('.nav').classList.toggle('active')">☰ Menu</div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="container">
+            <ul>
+                <li><a href="#">Weekly edition</a></li>
+                <li><a href="#">The world in brief</a></li>
+                <li><a href="#">War in the Middle East</a></li>
+                <li><a href="#">War in Ukraine</a></li>
+                <li><a href="#">United States</a></li>
+                <li><a href="#">The world economy</a></li>
+                <li><a href="#">Business</a></li>
+                <li><a href="#">Artificial intelligence</a></li>
+                <li><a href="#">Archive 1945</a></li>
+                <li><a href="#">Games</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Article -->
+    <div class="article-header">
+        <div class="category">
+            <span class="region">United states</span> | <span class="tag">More than a feeling</span>
+        </div>
+        <h1>The MAGA revolution threatens America’s most innovative place</h1>
+        <div class="subtitle">Cuts to funding risk hobbling Boston’s science establishment</div>
+        <div class="image">
+            <img src="../images/mit.jpeg" alt="Blue skies contrast the colourful buildings of the Stata Centre at Massachusetts Institute of Technology, Boston">
+            <div class="caption">Photograph: Alamy</div>
+        </div>
+        <div class="meta">May 18th 2025 | BOSTON</div>
+        <div class="actions">
+            <a href="#">Save</a>
+            <a href="#">Share</a>
+            <a href="#">Give</a>
+        </div>
+    </div>
+
+    <div class="article-content">
+        <p><a href="https://www.economist.com/united-states/2025/05/18/the-maga-revolution-threatens-americas-most-innovative-place">SCIENCE</a> SOMETIMES advances not by design but by happenstance. Thirty years ago a graduate student in chemical engineering at the Massachusetts Institute of Technology (MIT) was describing a bottleneck in his work over drinks at a bar in Cambridge, Massachusetts. A Harvard student heard and suggested a solution using microchip manufacturing technology that his lab had recently developed. The casual exchange led to a collaboration under the guidance of Donald Ingber, a Harvard cell biologist, that eventually helped pioneer organ-chip technology—lab-grown models of human organs on tiny chips. Dr Ingber would go on to found a biotech firm in Boston that commercialised the technology.</p>
+        <div class="chart">
+            <img src="../images/cities.jpeg" alt="Chart: The Economist">
+            <div class="chart-caption">Chart: The Economist</div>
+            <!-- Replace with actual chart image or use Chart.js for dynamic rendering -->
+        </div>
+        <p>The story’s arc is very Boston: federally funded academic research and serendipitous encounters among brainiacs spawning innovation and biotech firms. If science in America has a centre of gravity it is along the Charles River, which snakes between Boston and Cambridge, where MIT, Harvard, world-class hospitals and venture-capital firms all share a riverbank. Yet that same concentration of science makes the area vulnerable to politics. President Donald Trump’s policies on universities and his administration’s proposed cuts to science funding threaten not only Massachusetts’s sprawling research and biotech ecosystem, but also the country’s competitive edge in innovation.</p>
+
+        <p>For 17 of the past 19 years universities and hospitals in Boston have received more funding from the National Institutes of Health (NIH) than those anywhere else (see chart). Roughly one in eight of America’s top 40 research universities call the area home. Of all these institutions no place has drawn Mr Trump’s ire quite like Harvard. Just hours after Harvard refused to comply with federal demands to restructure the university, Dr Ingber was among the first of its scientists to receive a stop-work order on his grants. Then on May 5th Linda McMahon, the education secretary, sent a rambling letter to Harvard with an extraordinary threat: the university will no longer receive any new federal research grants.</p>
+        <div class="chart">
+            <img src="../images/metro-areas.jpeg" alt="Chart: The Economist">
+            <div class="chart-caption">Chart: The Economist</div>
+        </div>
+        <p>Like a keystone species, Harvard supports research and development far beyond its campus; unsettle Harvard, and the effects will be felt widely. Its federal grants often depend on collaborations among universities and hospitals across the region. Among the economies of America’s 20 largest metro areas, none has a greater share dedicated to the sciences and related industries (see chart). This patch of land is home to more biotech firms than anywhere else in the world.</p>
+        <p>The University of Massachusetts (UMass) medical centre, 40 miles west of Cambridge, is a juggernaut in RNA research, a field that underpins some of the most promising therapeutic advances. UMass has already paused PhD admissions and laid off employees at its biomedical-sciences institute. “What science has in common with business is that we don’t do well with uncertainty in our external environment,” says Phillip Zamore, a biologist who heads the university’s RNA Therapeutics Institute. “We can handle uncertainty in an explanation for nature, but it’s terrifying to think ‘how am I going to pay my postdoc?’” he adds. Most of his graduate students go into biotech.</p>
+        <div class="chart">
+            <img src="../images/professionals.jpeg" alt="Chart: The Economist">
+            <div class="chart-caption">Chart: The Economist</div>
+        </div>
+        <p>Some consequences will be harder to measure. Biotech and pharmaceutical firms rely on a stream of discoveries from federally funded university labs doing open-ended research. Much of this research initially has no obvious commercial use. But the more federal money flows into university labs, the greater the chances that scientists stumble upon discoveries that industry can turn into the next life-saving drug. Sekar Kathiresan, the head of the Boston-based biotech firm Verve Therapeutics, expects to spend $2bn developing a drug that could treat heart disease, which is the leading cause of death in the world. “The technology we’re using to turn off a cholesterol-raising gene in the liver to lead to lifelong cholesterol-lowering”, he says, was made possible by scientists at the Broad Institute in Cambridge who invented base editing in 2016. “Generous federal funding for science is critical for the next generation of ideas and cures,” he adds.</p>
+        <div class="advertisement">Advertisement: Scroll to continue with content</div>
+        <p>With the fight raging most fiercely inside Massachusetts, the state has in many ways led the resistance against Mr Trump’s funding cuts and woo-woo approach to science. Since February the state’s attorney-general has filed two lawsuits against cuts to NIH funding. Others have joined both suits. Harvard, too, is pushing back in court. As one of the most progressive places in the country, Massachusetts is an anathema to Trumpism, notes Michael Goldman, a longtime Democratic operative in the state. “But the British couldn’t break Boston, the New York Yankees couldn’t break Boston and neither can Trump,” he says. It is not just Bostonians who should hope he’s right<span class="red-square">. ■</span></p>
+        <p><i>Stay on top of American politics with <a href="#">The US in brief</a>, our daily newsletter with fast analysis of the most important political news, and <a href="#">Checks and Balance</a>, a weekly note from our Lexington columnist that examines the state of American democracy and the issues that matter to voters.</i></p>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="links">
+                <div>
+                    <h4>Explore more</h4>
+                    <p><a href="#">World</a></p>
+                    <p><a href="#">Science</a></p>
+                    <p><a href="#">United States</a></p>
+                </div>
+                <div>
+                    <h4>The Economist</h4>
+                    <p><a href="#">About</a></p>
+                    <p><a href="#">Reuse our content</a></p>
+                    <p><a href="#">Subscribe</a></p>
+                    <p><a href="#">Economist Enterprise</a></p>
+                </div>
+                <div>
+                    <h4>The Economist Group</h4>
+                    <p><a href="#">Economist Intelligence</a></p>
+                    <p><a href="#">Economist Impact</a></p>
+                    <p><a href="#">Economist Impact Events</a></p>
+                    <p><a href="#">Economist Education Courses</a></p>
+                </div>
+                <div>
+                    <h4>Contact</h4>
+                    <p><a href="#">Help and support</a></p>
+                    <p><a href="#">Advertise</a></p>
+                    <p><a href="#">Press centre</a></p>
+                    <p><a href="#">Careers</a></p>
+                </div>
+            </div>
+            <p>Registered in England and Wales. No. 236383 | Registered office: The Adelphi, 1-11 John Adam Street, London, WC2N 6HT | VAT Reg No: GB 340 436 876</p>
+            <p>© The Economist Newspaper Limited 2025</p>
+        </div>
+    </footer>
+</body>
+</html>

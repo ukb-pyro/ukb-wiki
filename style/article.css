@@ -1,0 +1,76 @@
+/* Basic styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 1rem;
+  background: white;
+  color: #222;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark {
+  background: #121212;
+  color: #eee;
+}
+
+#site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+#darkmode-toggle {
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+#darkmode-toggle:hover {
+  color: #f39c12;
+}
+
+#logo {
+  height: 50px;
+  transition: filter 0.3s;
+  cursor: pointer;
+}
+
+/* Lightbox styles */
+#lightbox {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+#lightbox.visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+#lightbox-img {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 10px;
+}
+
+#lightbox-close {
+  position: absolute;
+  top: 30px;
+  right: 45px;
+  font-size: 40px;
+  color: white;
+  cursor: pointer;
+  user-select: none;
+}

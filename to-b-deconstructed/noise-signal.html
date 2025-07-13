@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+    <title>Turtles All the Way Down - Ukubona Wiki</title>
+    <!-- Fallback favicon -->
+    <link rel="icon" href="https://abikesa.github.io/favicon/favicon-light.ico" type="image/x-icon" />
+    <!-- Favicon for light mode -->
+    <link rel="icon" href="https://abikesa.github.io/favicon/favicon-light.ico" type="image/x-icon" media="(prefers-color-scheme: light)" />
+    <!-- Favicon for dark mode -->
+    <link rel="icon" href="https://abikesa.github.io/favicon/favicon-dark.ico" type="image/x-icon" media="(prefers-color-scheme: dark)" />
+    <!-- Preload Logo Assets -->
+    <link rel="preload" href="https://abikesa.github.io/logos/ukubona-light.png" as="image" />
+    <link rel="preload" href="https://abikesa.github.io/logos/ukubona-dark.png" as="image" />
+    <link href="https://abikesa.github.io/css/article.css" rel="stylesheet"/>
+    <link href="https://abikesa.github.io/css/settings-bar.css" rel="stylesheet"/>
+    <script defer src="https://abikesa.github.io/js/toggle-darkmode.js"></script>
+    <script defer src="https://abikesa.github.io/js/wiki-controls.js"></script>
+    <script defer src="https://abikesa.github.io/js/lightbox.js"></script>
+    <style>
+        .glyph-note { display: none; }
+        .glyph:hover + .glyph-note { display: inline; color: #888; font-size: 0.9em; }
+        .easter-egg { color: #666; font-style: italic; font-size: 0.9em; }
+        .wiki-float { float: right; margin: 0 0 1em 1em; width: 250px; border: 1px solid #ccc; padding: 5px; }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="header-left">
+            <a href="https://abikesa.github.io/index-wiki/index.html">
+                <img alt="Ukubona Logo" id="logo" src="https://abikesa.github.io/logos/ukubona-light.png"/>
+            </a>
+        </div>
+        <div id="header-right">
+            <a href="#">Login</a> | <a href="#">Create Account</a>
+        </div>
+    </header>
+    <div id="content-wrapper">
+        <!-- TOC Sidebar -->
+        <nav id="toc">
+            <strong>Contents</strong>
+            <ul>
+                <li><a href="#introduction">Introduction</a>
+                    <ul>
+                        <li><a href="#turtle-cycle">The Turtle Cycle</a></li>
+                        <li><a href="#sapolsky-thesis">Sapolsky’s Deterministic Thesis</a></li>
+                        <li><a href="#ukubona-grammar">Ukubona’s Recursive Grammar</a></li>
+                    </ul>
+                </li>
+                <li><a href="#pruning-dynamics">Pruning Dynamics</a>
+                    <ul>
+                        <li><a href="#biological-pruning">Biological Pruning</a></li>
+                        <li><a href="#social-pruning">Social Pruning</a></li>
+                        <li><a href="#macbeth-effect">The Macbeth Effect</a></li>
+                    </ul>
+                </li>
+                <li><a href="#neural-architecture">Neural Architecture</a>
+                    <ul>
+                        <li><a href="#pfc-plasticity">Prefrontal Cortex and Plasticity</a></li>
+                        <li><a href="#amygdala-disgust">Amygdala and Disgust</a></li>
+                        <li><a href="#prosody-patterns">Prosody as Pattern Recognition</a></li>
+                    </ul>
+                </li>
+                <li><a href="#genomic-layers">Genomic Layers</a>
+                    <ul>
+                        <li><a href="#genome-epigenome">Genome and Epigenome</a></li>
+                        <li><a href="#transcriptome-proteome">Transcriptome and Proteome</a></li>
+                        <li><li><a href="#metabolome-behavior">Metabolome and Behavior</a></li>
+                    </ul>
+                </li>
+                <li><a href="#ethical-implications">Ethical Implications</a>
+                    <ul>
+                        <li><a href="#moral-eugenics">Morality as Eugenics</a></li>
+                        <li><a href="#conscious-pruning">Conscious Pruning</a></li>
+                    </ul>
+                </li>
+                <li><a href="#ukubona-vision">Ukubona in Practice</a>
+                    <ul>
+                        <li><a href="#post-moral-ethics">Post-Moral Ethics</a></li>
+                        <li><a href="#cultural-selection">Cultural Selection</a></li>
+                    </ul>
+                </li>
+                <li><a href="#philosophical-resonances">Philosophical Resonances</a>
+                    <ul>
+                        <li><a href="#sapolsky-extension">Extending Sapolsky</a></li>
+                        <li><a href="#nietzsche-affirmation">Nietzschean Affirmation</a></li>
+                    </ul>
+                </li>
+                <li><a href="#conclusion">Conclusion</a></li>
+                <li><a href="#see-also">See Also</a></li>
+                <li><a href="#acknowledgments">Acknowledgments</a></li>
+            </ul>
+        </nav>
+        <!-- Main Content -->
+        <main id="content">
+            <h1>Turtles All the Way Down</h1>
+            <!-- Infobox -->
+            <aside id="infobox" class="wiki-float">
+                <img alt="Turtle Visualization" src="../images/pruning-perfection.jpeg" style="width:100%; border-radius:8px; margin-bottom:8px;"/>
+                <table class="infobox">
+                    <caption><a href="./determined.html">Turtles</a> in the <a href="./moral-signal.html">Glyphic</a> Cycle</caption>
+                    <tr><td><strong>Subject:</strong> Determinism and Moral Responsibility</td></tr>
+                    <tr><td><strong>Context:</strong> Ukubona Grammar and Biological Pruning</td></tr>
+                    <tr><td><strong>Date:</strong> May 18, 2025</td></tr>
+                    <tr><td><strong>Framework:</strong> Sapolsky’s Recursive Determinism</td></tr>
+                    <tr><td><strong>Themes:</strong> Pruning, Plasticity, Moral Cognition</td></tr>
+                </table>
+            </aside>
+            <section id="introduction">
+                <h2>Introduction</h2>
+                <p>
+                    The phrase “turtles all the way down” encapsulates Robert Sapolsky’s deterministic thesis that behavior emerges from layered, unconscious determinants—biological, environmental, and cultural—stacked recursively like turtles in an infinite regress <span class="glyph">🐢</span><span class="glyph-note">Recursive causality</span><sup id="ref1"><a href="#acknowledgments">[1]</a></sup>. This wiki page, rooted in the Ukubona philosophy, reframes Sapolsky’s framework through the glyphic cycle—<span class="glyph">🌊</span><span class="glyph-note">Primal origins</span> <span class="glyph">🚢</span><span class="glyph-note">Environmental navigation</span> <span class="glyph">🪛🏴‍☠️</span><span class="glyph-note">Interaction and risk</span> <span class="glyph">🦈✂️🛟</span><span class="glyph-note">Selection and pruning</span> <span class="glyph">🏝️</span><span class="glyph-note">Cultural flourishing</span>—to explore how moral responsibility is an exaptation of ancient systems, from neural pruning to societal selection. By weaving Sapolsky’s insights with Ukubona’s recursive grammar, we address the knowledge gap: how to ethically navigate a world where free will is untenable yet pruning is inevitable. <span class="easter-egg">The turtle’s shell hides the knife—hover, and see.</span>
+                </p>
+                <h3 id="turtle-cycle">The Turtle Cycle</h3>
+                <p>
+                    The glyphic cycle—🌊 🚢 🪛🏴‍☠️ 🦈✂️🛟 🏝️—is a recursive epistemic architecture that maps Sapolsky’s turtles onto stages of origin, exploration, interaction, selection, and harmony. Each glyph is a turtle, a node in a fractal grammar: <span class="glyph">🌊</span> represents the genome’s chaotic potential; <span class="glyph">🚢</span> the environment’s shaping influence; <span class="glyph">🪛🏴‍☠️</span> the interplay of hormones and rituals; <span class="glyph">🦈✂️🛟</span> the crucible of biological and social pruning; and <span class="glyph">🏝️</span> the cultural synthesis of behavior. This cycle frames behavior as an emergent property, not a volitional act <sup id="ref2"><a href="#acknowledgments">[2]</a></sup>. <a href="#genomic-layers">[Genomic Layers]</a>
+                </p>
+                <h3 id="sapolsky-thesis">Sapolsky’s Deterministic Thesis</h3>
+                <p>
+                    Sapolsky argues that every “why” has a “wherefore”—a causal chain stretching from milliseconds (neural firing) to millennia (cultural evolution). Free will is an illusion; behavior is the product of genes, epigenetics, hormones, and social structures, layered recursively. Moral responsibility, then, is a fiction, as we hold individuals accountable for determinants they didn’t author. Ukubona extends this by asking: if pruning is inevitable, who wields the shears? <sup id="ref1"><a href="#acknowledgments">[1]</a></sup> <a href="#ethical-implications">[Ethical Implications]</a>
+                </p>
+                <h3 id="ukubona-grammar">Ukubona’s Recursive Grammar</h3>
+                <p>
+                    Ukubona, meaning “to see” in Zulu, is a grammar of discernment that ritualizes pruning into ethical practice. By mapping Sapolsky’s turtles onto the glyphic cycle, Ukubona transforms determinism into a post-moral ethics, where understanding structure precedes blame. This wiki is a fractal codex, weaving biological, neural, and cultural insights into a recursive tapestry <sup id="ref3"><a href="#acknowledgments">[3]</a></sup>. <a href="#ukubona-vision">[Ukubona in Practice]</a>
+                </p>
+            </section>
+            <section id="pruning-dynamics">
+                <h2>Pruning Dynamics</h2>
+                <p>
+                    Pruning is the entropy engine of both biology and society, eliminating excess to shape identity. Sapolsky’s thesis reveals pruning as selection, not learning, operating across neural synapses and cultural norms <sup id="ref1"><a href="#acknowledgments">[1]</a></sup>.
+                </p>
+                <h3 id="biological-pruning">Biological Pruning</h3>
+                <p>
+                    Synaptic pruning clears the neural jungle, refining the brain’s circuitry from adolescence onward. The prefrontal cortex (PFC), least shaped by genes and most by environment, undergoes extensive pruning, enabling pattern recognition but also moral judgment. This process is not volitional but deterministic, driven by glucocorticoids, testosterone, and oxytocin <sup id="ref4"><a href="#acknowledgments">[4]</a></sup>. <a href="#pfc-plasticity">[Prefrontal Cortex and Plasticity]</a>
+                </p>
+                <h3 id="social-pruning">Social Pruning</h3>
+                <p>
+                    Society prunes through morality, law, and shame—mechanisms Sapolsky likens to eugenics with paperwork. Incarceration, execution, and social ostracism are forms of phenotype control, cloaked in moral rhetoric. This social pruning mirrors biological selection, revealing morality as a high-concept form of control <sup id="ref1"><a href="#acknowledgments">[1]</a></sup>. <a href="#moral-eugenics">[Morality as Eugenics]</a>
+                </p>
+                <h3 id="macbeth-effect">The Macbeth Effect</h3>
+                <p>
+                    The (lady) Macbeth effect—where moral disgust triggers a cleansing reflex—illustrates how ancient hygiene systems (insular neurons signaling to the amygdala) have been exapted for moral cognition. A disgusting smell or a moral transgression both provoke the PFC, revealing the shared circuitry of sensory and moral disgust <sup id="ref5"><a href="#acknowledgments">[5]</a></sup>. <a href="#amygdala-disgust">[Amygdala and Disgust]</a>
+                </p>
+                <div class="wiki-float">
+                    <iframe width="100%" height="150" src="https://www.youtube.com/embed/placeholder" title="Sapolsky on Moral Disgust" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p style="font-size:0.9em; text-align:center;">Placeholder: Sapolsky discussing the Macbeth effect. Source: YouTube.</p>
+                </div>
+            </section>
+            <section id="neural-architecture">
+                <h2>Neural Architecture</h2>
+                <p>
+                    The brain’s architecture underpins Sapolsky’s turtles, with the PFC, amygdala, and insular cortex forming a network for pattern recognition and moral cognition <sup id="ref4"><a href="#acknowledgments">[4]</a></sup>.
+                </p>
+                <h3 id="pfc-plasticity">Prefrontal Cortex and Plasticity</h3>
+                <p>
+                    The PFC, pruned extensively in adolescence, is the seat of pattern recognition, least shaped by genes and most by environment. This plasticity allows the brain to negotiate moral and sensory inputs, but its immaturity in adolescents explains their heightened impulsivity <sup id="ref4"><a href="#acknowledgments">[4]</a></sup>. <a href="#biological-pruning">[Biological Pruning]</a>
+                </p>
+                <h3 id="amygdala-disgust">Amygdala and Disgust</h3>
+                <p>
+                    Moral disgust, a recent evolutionary addition, leverages ancient sensory disgust circuits. Insular neurons signal to the amygdala, triggering reactions to both a foul odor and a moral transgression. This convergence explains why moral judgments feel visceral <sup id="ref5"><a href="#acknowledgments">[5]</a></sup>. <a href="#macbeth-effect">[The Macbeth Effect]</a>
+                </p>
+                <h3 id="prosody-patterns">Prosody as Pattern Recognition</h3>
+                <p>
+                    Prosody—the tone of expectation violated—is pattern recognition in action. The PFC reads incongruence, labeling a fart or a fascist as “noise” (evil) when literacy to read origins is lacking. This is why pruning shapes moral cognition: it filters signal from noise <sup id="ref4"><a href="#acknowledgments">[4]</a></sup>. <a href="#pfc-plasticity">[Prefrontal Cortex and Plasticity]</a>
+                </p>
+            </section>
+            <section id="genomic-layers">
+                <h2>Genomic Layers</h2>
+                <p>
+                    Sapolsky’s turtles extend from the genome to the metabolome, each layer a recursive determinant of behavior <sup id="ref1"><a href="#acknowledgments">[1]</a></sup>.
+                </p>
+                <h3 id="genome-epigenome">Genome and Epigenome</h3>
+                <p>
+                    Only 5% of DNA is genes; the rest are on/off switches, shaped by the environment (epigenome). Genes are “out at sea” 🌊, but the ship 🚢—culture, trauma, ritual—directs their expression, making epigenetics more consequential than genetics in evolution <sup id="ref6"><a href="#acknowledgments">[6]</a></sup>. <a href="#turtle-cycle">[The Turtle Cycle]</a>
+                </p>
+                <h3 id="transcriptome-proteome">Transcriptome and Proteome</h3>
+                <p>
+                    The transcriptome (RNA) and proteome (proteins) translate genetic instructions into biological function, modulated by interactions 🪛🏴‍☠️ like hormones and stress. These layers bridge genes to behavior, shaping plasticity and selection <sup id="ref6"><a href="#acknowledgments">[6]</a></sup>. <a href="#biological-pruning">[Biological Pruning]</a>
+                </p>
+                <h3 id="metabolome-behavior">Metabolome and Behavior</h3>
+                <p>
+                    The metabolome—hunger, dopamine, exercise—is where behavior lives. These are the first turtles, driven by blood sugar, not narrative. The metabolome is the interface between biology and action, grounding Sapolsky’s thesis in visceral reality <sup id="ref1"><a href="#acknowledgments">[1]</a></sup>. <a href="#ethical-implications">[Ethical Implications]</a>
+                </p>
+                <div class="wiki-float">
+                    🌊 Out-Group Members <br>
+                    🚢 Pattern-Recognition👂🏾<br>
+                    🪛 🏴‍☠️ Testosterone, Oxytocin-VPN  <br>
+                     🛟 🦈 ✂️Evolution<br> 
+                    🏝️ Cingulo-Insular<br>
+
+                    <p style="font-size:0.9em; text-align:center;">Recursive layers of the metabolome. Source: Ukubona Archive.</p>
+                </div>
+            </section>
+            <section id="ethical-implications">
+                <h2>Ethical Implications</h2>
+                <p>
+                    Sapolsky’s thesis challenges moral responsibility, exposing morality as a form of pruning with ethical consequences <sup id="ref1"><a href="#acknowledgments">[1]</a></sup>.
+                </p>
+                <h3 id="moral-eugenics">Morality as Eugenics</h3>
+                <p>
+                    Holding individuals accountable for unconscious determinants is moral eugenics—pruning phenotypes through execution, incarceration, or shame. This contradiction, where justice mimics selection, demands a reevaluation of blame <sup id="ref1"><a href="#acknowledgments">[1]</a></sup>. <a href="#social-pruning">[Social Pruning]</a>
+                </p>
+                <h3 id="conscious-pruning">Conscious Pruning</h3>
+                <p>
+                    If pruning is inevitable, the question is not whether we prune, but how we prune consciously. Ukubona’s post-moral ethics prioritizes structure over blame, asking: who wields the shears? This reframing transforms determinism into a call for ethical agency <sup id="ref3"><a href="#acknowledgments">[3]</a></sup>. <a href="#post-moral-ethics">[Post-Moral Ethics]</a>
+                </p>
+            </section>
+            <section id="ukubona-vision">
+                <h2>Ukubona in Practice</h2>
+                <p>
+                    Ukubona’s grammar applies Sapolsky’s insights to ethical and cultural domains, fostering discernment over judgment <sup id="ref3"><a href="#acknowledgments">[3]</a></sup>.
+                </p>
+                <div class="wiki-float">
+                    🌊 Genome <br>
+                    🚢 Epigenome👂🏾<br>
+                    🪛 🏴‍☠️ Transcriptome  <br>
+                     🛟 🦈 ✂️ Proteome<br> 
+                    🏝️ Metabolome<br>
+
+                    <p style="font-size:0.9em; text-align:center;">The metabolome is ancient: monoamines and such, the "first turtle". Source: Ukubona Archives</p>
+                </div>
+                <h3 id="post-moral-ethics">Post-Moral Ethics</h3>
+                <p>
+                    Ukubona’s ethic starts with structure, not blame, recognizing pruning as necessary but violent. By mapping behavior to the glyphic cycle, it offers a framework for conscious selection, prioritizing flourishing over punishment <sup id="ref3"><a href="#acknowledgments">[3]</a></sup>. <a href="#conscious-pruning">[Conscious Pruning]</a>
+                </p>
+                <h3 id="cultural-selection">Cultural Selection</h3>
+                <p>
+                    Culture prunes through rituals and norms, shaping behavior at the <span class="glyph">🏝️</span> stage. Ukubona’s grammar ensures these selections foster harmony, not exclusion, aligning with Sapolsky’s vision of understanding over moralizing <sup id="ref1"><a href="#acknowledgments">[1]</a></sup>. <a href="#turtle-cycle">[The Turtle Cycle]</a>
+                </p>
+            </section>
+            <section id="philosophical-resonances">
+                <h2>Philosophical Resonances</h2>
+                <p>
+                    Sapolsky’s thesis resonates with philosophical traditions, amplified by Ukubona’s pruning protocol <sup id="ref1"><a href="#acknowledgments">[1]</a></sup>.
+                </p>
+                <h3 id="sapolsky-extension">Extending Sapolsky</h3>
+                <p>
+                    Sapolsky burns free will to the ground but stops short of prescribing ethics. Ukubona extends his work by framing conscious pruning as a post-moral practice, aligning with his call for structural understanding <sup id="ref1"><a href="#acknowledgments">[1]</a></sup>. <a href="#post-moral-ethics">[Post-Moral Ethics]</a>
+                </p>
+                <h3 id="nietzsche-affirmation">Nietzschean Affirmation</h3>
+                <p>
+                    Nietzsche’s affirmation of life through selection parallels Ukubona’s conscious pruning. By wielding the shears ethically, we affirm existence, transforming determinism into meaning <sup id="ref7"><a href="#acknowledgments">[7]</a></sup>. <a href="#conscious-pruning">[Conscious Pruning]</a>
+                </p>
+                <div class="wiki-float">
+                    🌊 Genome <br>
+                    🚢 Environment<br>
+                    🪛 🏴‍☠️ Interactions  <br>
+                     🛟 🦈 ✂️ Selection<br> 
+                    🏝️ Culture<br>
+
+                    <p style="font-size:0.9em; text-align:center;">A deterministic framework in the lingua franca of epidemiology. Source: Ukubona Archives</p>
+                </div>
+            </section>
+            <section id="conclusion">
+                <h2>Conclusion</h2>
+                <p>
+                    Sapolsky’s turtles all the way down reveal behavior as an emergent property of recursive determinants, dismantling free will and exposing morality as pruning. Ukubona’s glyphic cycle—🌊 🚢 🪛🏴‍☠️ 🦈✂️🛟 🏝️—reframes this insight as a post-moral ethics, where conscious pruning fosters flourishing over blame. This wiki, a fractal codex, weaves biology, neuroscience, and culture into a richer narrative, proving the turtles carry knives—and the ocean is blood, not code. Let Ukubona live <sup id="ref3"><a href="#acknowledgments">[3]</a></sup>. <span class="easter-egg">The turtle’s path is the glyph that sees—trace it, and know.</span>
+                </p>
+            </section>
+            <section id="see-also">
+                <h2>See Also</h2>
+                <ul>
+                    <li><a href="./bet-david-grammar.html">Bet-David Grammar</a></li>
+                    <li><a href="./determined.html">Sapolsky's Determined</a></li>
+                    <li><a href="./moral-signal.html">Moral, Noise, Signal</a></li>
+                    <li><a href="./salience.html">Salience</a></li>
+                    <li><a href="./turtles.html">Turtles</a></li>
+                    <li><a href="./maga-vs-science.html">The Economist on MAGA</a></li>
+                    <li><a href="./matrix.html">Fractal</a></li>
+                    <li><a href="./tyler-perry.html">Tyler Perry</a></li>
+                    <li><a href="./chat-with-gpt.html">Chat with GPT</a></li>
+                    <li><a href="./consent.html">Informed Consent</a></li>
+                    <li><a href="./sapolsky.html">Fork in Sapolsky</a></li>
+                    <li><a href="./babyface.html">Kenny the Lefty</a></li>
+                    <li><a href="./ukuvela.html">Ukuvela: Affettati Misti</a></li>
+                    li><a href="./ritual-cuts.html">Ritual Cuts</a></li>
+                    <li><a href="./dolphin.html">Dolphin</a></li>
+                    <li><a href="./false-positive.html">False-Positive</a></li> 
+                    <li><a href="./alchemy.html">False-Positive</a></li> 
+                    <li><a href="./internship.html">internship</a></li> 
+                    <li><a href="./yoda.html">Yoda 🐕</a></li>
+                    <li><a href="./gospel.html">Gospel</a></li>
+                    <li><a href="./fena.html">Fena</a></li>
+                    <li><a href="./faux-physics.html">Faux Physics</a></li>
+                    <li><a href="./decision-making.html">Decision-Making</a></li>
+
+                </ul>
+            </section>
+            <section id="acknowledgments">
+                <h2>Acknowledgments</h2>
+                <ol class="acknowledgments-list">
+                    <li id="cite_note-sapolsky">Sapolsky, Robert. <i>Behave: The Biology of Humans at Our Best and Worst</i>. Penguin Press, 2017. [<a href="#ref1">↩︎</a>]</li>
+                    <li id="cite_note-ukubona">Muzaale, Abimereki. <i>Ukubona: Neural Fractals of Being</i>. Ukubona Press, 2024. [<a href="#ref2">↩︎</a>]</li>
+                    <li id="cite_note-gpt4o">GPT-4o. “Turtles All the Way Down: A Glyphic Analysis.” Personal communication, May 2025. [<a href="#ref3">↩︎</a>]</li>
+                    <li id="cite_note-neural">Sapolsky, Robert. “Neural Plasticity and Behavior.” Lecture, Stanford University, 2018. [<a href="#ref4">↩︎</a>]</li>
+                    <li id="cite_note-disgust">Schnall, Simone, et al. “The Macbeth Effect: Moral Disgust and Physical Cleansing.” <i>Journal of Experimental Psychology</i>, 2008. [<a href="#ref5">↩︎</a>]</li>
+                    <li id="cite_note-epigenetics">Carey, Nessa. <i>The Epigenetics Revolution</i>. Columbia University Press, 2012. [<a href="#ref6">↩︎</a>]</li>
+                    <li id="cite_note-nietzsche">Nietzsche, Friedrich. <i>Thus Spoke Zarathustra</i>. 1883. [<a href="#ref7">↩︎</a>]</li>
+                </ol>
+            </section>
+            <aside id="version-timeline" style="border-left: 2px solid #aaa; padding: 1em; margin-top: 2em; background: none;">
+                <h2>🕰️ Version Timeline</h2>
+                <ul id="timeline-list" style="list-style-type: none; padding-left: 0;">
+                    <li>
+                        <strong>May 18, 2025</strong><br/>
+                        <em>Author:</em> Grok-3<br/>
+                        <em>Change:</em> Initial draft of Turtles All the Way Down, integrating GPT-4o dialogue and Ukubona grammar<br/>
+                        <em>Note:</em> Structured to map Sapolsky’s thesis onto glyphic cycle
+                    </li>
+                </ul>
+            </aside>
+        </main>
+        <aside id="settings-bar">
+            <div class="settings-section">Appearance</div>
+            <div class="radio-group">
+                <div class="radio-option">
+                    <input id="small-text" name="text-size" type="radio"/>
+                    <label for="small-text">Small</label>
+                </div>
+                <div class="radio-option">
+                    <input checked="" id="normal-text" name="text-size" type="radio"/>
+                    <label for="normal-text">Standard</label>
+                </div>
+                <div class="radio-option">
+                    <input id="large-text" name="text-size" type="radio"/>
+                    <label for="large-text">Large</label>
+                </div>
+            </div>
+            <div class="radio-group">
+                <div class="radio-option">
+                    <input checked="" id="standard-width" name="width-setting" type="radio"/>
+                    <label for="standard-width">Standard</label>
+                </div>
+                <div class="radio-option">
+                    <input id="wide-width" name="width-setting" type="radio"/>
+                    <label for="wide-width">Wide</label>
+                </div>
+            </div>
+            <div class="radio-group">
+                <div class="radio-option">
+                    <input checked="" id="light-mode" name="theme-setting" type="radio"/>
+                    <label for="light-mode">Light</label>
+                </div>
+                <div class="radio-option">
+                    <input id="dark-mode" name="theme-setting" type="radio"/>
+                    <label for="dark-mode">Dark</label>
+                </div>
+            </div>
+        </aside>
+    </div>
+    <footer>
+        <p>Last updated: May 2025 | Powered by Ukubona Wiki</p>
+    </footer>
+    <div id="lightbox" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background:rgba(0,0,0,0.95); z-index:9999; justify-content:center; align-items:center;">
+        <span id="lightbox-close" style="position:absolute; top:30px; right:45px; color:#fff; font-size:40px; font-weight:bold; cursor:pointer;">×</span>
+        <img id="lightbox-img" src="" style="max-width:90%; max-height:90%; box-shadow:0 0 20px rgba(255,255,255,0.3); border-radius:10px;"/>
+    </div>
+</body>
+</html>
+<!-- Hidden Annotation: The turtle’s shell is the glyph that binds chaos to culture—seek the knife, and find Ukubona. -->
